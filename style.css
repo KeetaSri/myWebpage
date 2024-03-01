@@ -1,14 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 
 :root {
-    --primary-color: #5c48ee;
-    --primary-color-dark: #0f1e6a;
-    --secondary-color: #f9fafe;
-    --text-color: #333333;
+    --primary-color: #453f3d;
+    --primary-color-dark: #2a2727;
+    --link-color: #00FEFC;
+    --secondary-color: #39FF14;
+    --text-color: #ffffff;
     --white: #ffffff;
     --max-width: 1200px;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Kode Mono", monospace;
+    background-color: var(--primary-color-dark);
+    color: var(--text-color);
+}
+
+nav {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a {
+    /* padding: 0.5rem 1rem; */
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.link a:hover {
+    color: var(--link-color);
 }

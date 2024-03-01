@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 
 :root {
-    --primary-color: #453f3d;
+    --primary-color-light: #453f3d;
     --primary-color-dark: #2a2727;
     --link-color: #00FEFC;
     --secondary-color: #39FF14;
     --text-color: #ffffff;
-    --white: #ffffff;
+    --white-color: #ffffff;
+    --dark-red-color: #B61810;
     --max-width: 1200px;
 }
 
@@ -58,4 +59,16 @@ nav {
 
 .link a:hover {
     color: var(--link-color);
+}
+
+.link .nav__btn {
+    padding: 0.5rem 2rem;
+    color: var(--primary-color-light) !important;
+    background-color: var(--white-color);
+    border-radius: 5px;
+}
+
+.link .nav__btn:hover {
+    background-color: var(--dark-red-color);
+    color: var(--text-color) !important;
 }

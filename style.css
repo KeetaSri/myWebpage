@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 
 :root {
-    --primary-color-light: #7c7877;
+    --primary-color-light: #474342;
     --primary-color-dark: #2a2727;
     --link-color: #00FEFC;
     --secondary-color: #39FF14;
-    --text-color: #ffffff;
-    --white-color: #ffffff;
+    --text-color: #FFFFFF;
+    --secondary-text-color: #7c7877;
+    --white-color: #FFFFFF;
     --dark-red-color: #B61810;
+    --light-red-color: #FF3131;
     --max-width: 1200px;
 }
 
@@ -33,15 +35,19 @@ nav {
     justify-content: space-between;
 }
 
-.nav__logo a {
-    font-size: 1.5rem;
+.navbar {
+    background-color: var(--primary-color-light);
+}
+
+.nav-logo a {
+    font-size: 3rem;
     font-weight: 500;
     color: var(--secondary-color);
     text-decoration: none;
     transition: 0.3s;
 }
 
-.nav__links {
+.nav-links {
     list-style: none;
     display: flex;
     align-items: center;
@@ -49,7 +55,6 @@ nav {
 }
 
 .link a {
-    /* padding: 0.5rem 1rem; */
     font-size: 1.5rem;
     font-weight: 500;
     color: var(--text-color);
@@ -61,14 +66,14 @@ nav {
     color: var(--link-color);
 }
 
-.link .nav__btn {
+.link .nav-btn {
     padding: 0.5rem 2rem;
-    color: var(--primary-color-light) !important;
+    color: var(--primary-color-dark) !important;
     background-color: var(--white-color);
     border-radius: 5px;
 }
 
-.link .nav__btn:hover {
+.link .nav-btn:hover {
     background-color: var(--dark-red-color);
     color: var(--text-color) !important;
 }
@@ -76,42 +81,49 @@ nav {
 .container {
     max-width: var(--max-width);
     margin: auto;
-    padding: 1rem;
+    padding-top: 1.5rem;
     min-height: calc(100vh - 100px);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
+    gap: 10rem;
 }
 
-.content__container {
+.content-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top;
 }
 
-.content__container h1 {
-    font-size: 3rem;
+.content-container h1 {
+    font-size: 2.5rem;
     font-weight: 400;
     line-height: 3.5rem;
-    color: var(--text-color);
+    color: var(--light-red-color);
     margin-bottom: 1rem;
 }
 
-.heading__1 {
-    font-weight: 700;
-    color: var(--primary-color-light);
+.mainText {
+    font-weight: 400;
+    font-size: 30px;
+    color: var(--secondary-text-color);
 }
 
-.heading__2 {
-    font-weight: 700;
-    color: var(--primary-color-light);
+.subText {
+    font-weight: 400;
+    font-size: 30px;
+    color: var(--secondary-color);
 }
 
-.image__container img {
+.paragraphText {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+img {
     width: 100%;
-    height: auto;    
+    height: auto;
+    object-fit: cover;
+    display: block;
 }
 
-.image__container img:hover {
-    content: url('assets/happy_face.jpg');
-}

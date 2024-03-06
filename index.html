@@ -5,45 +5,42 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width", initial-scale="1.0">
         <link rel="stylesheet" href="style.css">
-        <title>My Webpage | Landing Page</title>
+        <title>My Webpage | Home Page</title>
     </head>
     <body>
-        <nav>
-            <div class="nav__logo"><a href="#">Welcome to my page</a></div>
-            <ui class="nav__links">
+        <nav class="navbar">
+            <div class="nav-logo"><a href="#">WELCOME</a></div>
+            <ui class="nav-links">
                 <li class="link"><a href="#">About</a></li>
-                <li class="link"><a href="#">Contact</a></li>
-                <li class="link"><a href="#">Users</a></li>
-                <li class="link"><a href="#" class="nav__btn">Register</a></li>
+                <li class="link"><a href="#">Experiences</a></li>
+                <li class="link"><a href="#">View Account</a></li>
+                <li class="link"><a href="#" class="nav-btn">Test Account</a></li>
             </ui>
         </nav>
         <section class="container">
-            <div class="content__container">
-                <h1>
-                    H1 Text Fonts Here<br>
-                    <span class="heading__1">Span TEXT 1</span><br>
-                    <span class="heading__2">Span TEXT 2</span>
+            <div class="content-container">
+                <h1>Profile<br>
+                    <span class="mainText">Name: </span>
+                    <span class="subText">Keetawat Srichompoo</span><br>
+                    <span class="mainText">Birthday: </span>
+                    <span class="subText">7 January 1997</span><br>
+                    <span class="mainText">Nationality: </span>
+                    <span class="subText">Thai</span><br>
                 </h1>
-                <p>
-                    Paragraph Area
-                    Paragraph Area
-                    Paragraph Area
+                <p class="paragraphText"><br>
+                    Born in Thailand, Angthong Hospital and raised in Kanchanaburi. <br>
+                    <br> Study focus on Computer and English as a teen and graduated from
+                    Kasetsart University, Computer Engineering, Software and Knowledge. <br>
+                    <br> After going through gap year and ordained as a monk, I'm back to coding in 2024. <br>
+                    <br> My coding skill are already rusty, but my will to learn are not. <br>
+                    <br> All hail all to the indian programmers on the internet. <br>
                 </p>
-                <form>
-                    <input type="text" placeholder="form text input here">
-                    <button type="submit">Submit Button</button>
-                </form>
             </div>
-            <div class="image__container">
-                <img src="assets/neutral_face.jpg" alt="header">
-                <!-- <img src="assets/happy_face.jpg" alt="header"> -->
-                <div class="image__content">
-                    <ul>
-                        <li>Insert Text Here 1</li>
-                        <li>Insert Text Here 2</li>
-                    </ul>
-                </div>
+            <div class="slide-container">
+                <img class="mySlides w3-animate-right" src="assets/neutral_face.jpg">
+                <img class="mySlides w3-animate-right" src="assets/happy_face.jpg">
             </div>
+            <script type = "text/javascript" src="function.js"></script>
         </section>
     </body>
 </html>

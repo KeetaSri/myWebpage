@@ -5,6 +5,7 @@
     --primary-color-dark: #2a2727;
     --link-color: #00FEFC;
     --secondary-color: #39FF14;
+    --disabled-color: #000000;
     --text-color: #FFFFFF;
     --secondary-text-color: #7c7877;
     --white-color: #FFFFFF;
@@ -66,6 +67,11 @@ nav {
     color: var(--link-color);
 }
 
+/*the button is unusable, delete this function after its become usable*/
+.link .debug-link:hover {
+    color: var(--disabled-color) !important;
+}
+
 .link .nav-btn {
     padding: 0.5rem 2rem;
     color: var(--primary-color-dark) !important;
@@ -74,7 +80,9 @@ nav {
 }
 
 .link .nav-btn:hover {
-    background-color: var(--dark-red-color);
+    /* background-color: var(--dark-red-color); */
+    /*the button is unusable, so the color with says it cannot be use for now*/
+    background-color: var(--disabled-color);
     color: var(--text-color) !important;
 }
 
@@ -85,7 +93,7 @@ nav {
     min-height: calc(100vh - 100px);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10rem;
+    gap: 8rem;
 }
 
 .content-container {
@@ -127,3 +135,23 @@ img {
     display: block;
 }
 
+.img-container .img-container-side {
+    padding-top: 1.5rem;
+}
+
+.contact {
+    max-width: var(--max-width);
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
+    display: grid;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: top;
+    
+}
